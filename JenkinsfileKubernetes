@@ -12,8 +12,7 @@ node{
     
     
     stage('Build Docker Image'){
-        sh 'docker build -t 
-dockersandy1/spring-boot-mongo .'
+        sh 'docker build -t dockersandy1/spring-boot-mongo .'
     }
     
     stage('Push Docker Image'){
