@@ -22,7 +22,7 @@ node{
         sh 'docker push dockersandy1/spring-boot-mongo'
      }
      
-     stage("Deploy To Kuberates Cluster"){
+     stage("Deploy To k8s"){
        kubernetesDeploy(
          configs: 'springBootMongo.yml', 
          kubeconfigId: 'KUBERNETES_CONFIG',
