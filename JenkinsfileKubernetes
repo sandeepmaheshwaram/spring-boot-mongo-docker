@@ -24,8 +24,8 @@ node{
      
      stage("Deploy To k8s"){
        kubernetesDeploy(
-         configs: 'springBootMongo.yml'
-         kubeconfigId: 'KUBERNETES_CONFIG'
+         configs: 'springBootMongo.yml',
+         kubeconfigId: 'KUBERNETES_CONFIG',
          enableConfigSubstitution: true
         )
      }
